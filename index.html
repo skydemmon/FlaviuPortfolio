@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Page d'accueil</title>
+    <meta name="description" content="Landing Page"/>
+    <link rel="shortcut icon" href="cv/img/logo.png">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<!--Header Section-->
+<section class="bg-gradient pt-5 pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                <div class="heading-brand"></div>
+
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-8 mx-auto text-center">
+                <h1>Portfolio Flaviu PALFI</h1>
+                <p class="lead mb-5">Developpeur Web et Web Mobile</p>
+                <a href="cv" class="btn btn-success svg-icon">
+                    <em class="mr-2" data-feather="github"></em>
+                    Commencer le tour!
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-9 mx-auto">
+                <div class="code-window">
+                    <div class="dots">
+                        <div class="red"></div>
+                        <div class="orange"></div>
+                        <div class="green"></div>
+                    </div>
+                    <pre class="language-javascript line-numbers"><code class="language-javascript">import {DomSanitizer} from '@angular/platform-browser';
+import {Pipe, PipeTransform} from '@angular/core';
+
+import { icons } from 'feather-icons'; // v4+
+
+@Pipe({ name: 'feather' })
+export class FeatherIconsPipe implements PipeTransform {
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  transform(icon: string, size: number = 24, color: string = 'inherit') {
+    return this.sanitizer.bypassSecurityTrustHtml(icons[icon].toSvg({
+      width: size,
+      height: size,
+      color: color
+    }));
+  }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--footer
+<footer class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="">Test Drive</a></li>
+                    <li class="list-inline-item"><a href="">API Docs</a></li>
+                    <li class="list-inline-item"><a href="">Fork Prism.js on GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                &copy; 2020 Flaviu PALFI - All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>
+-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="js/scripts.js">
+    
+    $(".progress-bar").animate({
+    width: "70%"
+}, 2500);
+    
+</script>
+</body>
+</html>

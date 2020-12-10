@@ -1,0 +1,50 @@
+/* your styles go here */
+#boxes .box .chart{
+  width:160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 160px;
+}
+#boxes .box .chart1{
+  width:160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 160px;
+}
+
+#boxes .box .chart2{
+  width:160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 160px;
+}
+
+.box canvas{
+  position: absolute;
+  bottom: 50px;
+  top:0;
+  left:0;
+}
+
+
+.bg-gradient {
+ /* background: -webkit-gradient(linear, left top, left bottom, from(#007bff), to(#3395ff)) !important;
+  background: linear-gradient(to bottom, #007bff, #3395ff) !important;*/
+
+background: #03001e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  color: #fff;
+}
