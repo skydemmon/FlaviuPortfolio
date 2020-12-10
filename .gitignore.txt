@@ -1,3 +1,0 @@
-cv/connexion/
-cv/insert.php
-.htaccess
